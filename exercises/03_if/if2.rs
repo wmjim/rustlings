@@ -1,9 +1,13 @@
 // TODO: Fix the compiler error on this function.
+// if 语句块是表达式，要求每个分支返回类型一致
 fn picky_eater(food: &str) -> &str {
     if food == "strawberry" {
         "Yummy!"
-    } else {
-        1
+    } else if food == "potato" {
+        "I guess I can eat that."
+    }
+    else {
+        "No thanks!"
     }
 }
 
