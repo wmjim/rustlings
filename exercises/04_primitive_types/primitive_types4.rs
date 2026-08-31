@@ -9,7 +9,8 @@ mod tests {
         let a = [1, 2, 3, 4, 5];
 
         // TODO: Get a slice called `nice_slice` out of the array `a` so that the test passes.
-        // let nice_slice = ???
+        // 对切片的不可变引用
+        let nice_slice = &a[1..4];
 
         assert_eq!([2, 3, 4], nice_slice);
     }
