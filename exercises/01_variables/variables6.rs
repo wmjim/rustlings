@@ -1,5 +1,5 @@
 // TODO: 修改下面这一行，修复编译错误。
-const NUMBER = 3;
+const NUMBER: i32 = 3;
 
 fn main() {
     println!("Number: {NUMBER}");
