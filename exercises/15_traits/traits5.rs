@@ -18,13 +18,13 @@ struct OtherStruct;
 impl SomeTrait for OtherStruct {}
 impl OtherTrait for OtherStruct {}
 
-// TODO: Fix the compiler error by only changing the signature of this function.
+// TODO: 只修改这个函数的签名，修复编译错误。
 fn some_func(item: ???) -> bool {
     item.some_function() && item.other_function()
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // 你可以在这里随意试验。
 }
 
 #[cfg(test)]

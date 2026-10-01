@@ -1,17 +1,17 @@
 fn trim_me(input: &str) -> &str {
-    // TODO: Remove whitespace from both ends of a string.
+    // TODO: 去掉字符串两端的空白字符。
 }
 
 fn compose_me(input: &str) -> String {
-    // TODO: Add " world!" to the string! There are multiple ways to do this.
+    // TODO: 在字符串后面加上 " world!"！有多种做法。
 }
 
 fn replace_me(input: &str) -> String {
-    // TODO: Replace "cars" in the string with "balloons".
+    // TODO: 把字符串中的 "cars" 替换成 "balloons"。
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // 你可以在这里随意试验。
 }
 
 #[cfg(test)]

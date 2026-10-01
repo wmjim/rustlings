@@ -1,5 +1,5 @@
-// Structs contain data, but can also have logic. In this exercise, we have
-// defined the `Package` struct, and we want to test some logic attached to it.
+// 结构体可以存放数据，也可以带有逻辑。在这个练习里，
+// 我们已经定义好了 `Package` 结构体，现在要测试挂在它上面的一些逻辑。
 
 #[derive(Debug)]
 struct Package {
@@ -11,8 +11,8 @@ struct Package {
 impl Package {
     fn new(sender_country: String, recipient_country: String, weight_in_grams: u32) -> Self {
         if weight_in_grams < 10 {
-            // This isn't how you should handle errors in Rust, but we will
-            // learn about error handling later.
+            // 这并不是 Rust 中处理错误的正确方式，不过我们
+            // 稍后才会学到错误处理。
             panic!("Can't ship a package with weight below 10 grams");
         }
 
@@ -23,20 +23,19 @@ impl Package {
         }
     }
 
-    // TODO: Add the correct return type to the function signature.
+    // TODO: 在函数签名中补上正确的返回类型。
     fn is_international(&self) {
-        // TODO: Read the tests that use this method to find out when a package
-        // is considered international.
+        // TODO: 阅读使用这个方法的测试，弄清什么情况下包裹会被视为国际包裹。
     }
 
-    // TODO: Add the correct return type to the function signature.
+    // TODO: 在函数签名中补上正确的返回类型。
     fn get_fees(&self, cents_per_gram: u32) {
-        // TODO: Calculate the package's fees.
+        // TODO: 计算包裹的运费。
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // 你可以在这里随意试验。
 }
 
 #[cfg(test)]

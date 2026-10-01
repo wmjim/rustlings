@@ -1,8 +1,7 @@
-// Characters (`char`)
+// 字符（`char`）
 
 fn main() {
-    // Note the _single_ quotes, these are different from the double quotes
-    // you've been seeing around.
+    // 注意这里是_单_引号，它和你之前见到的双引号不一样。
     let my_first_initial = 'C';
     if my_first_initial.is_alphabetic() {
         println!("Alphabetical!");
@@ -12,10 +11,10 @@ fn main() {
         println!("Neither alphabetic nor numeric!");
     }
 
-    // TODO: Analogous to the example before, declare a variable called `your_character`
-    // below with your favorite character.
-    // Try a letter, try a digit (in single quotes), try a special character, try a character
-    // from a different language than your own, try an emoji 😉
+    // TODO: 仿照上面的例子，在下面声明一个名为 `your_character` 的变量，
+    // 它的值是你最喜欢的字符。
+    // 可以试试字母，试试数字（要用单引号括起来），试试特殊符号，
+    // 试试你自己的语言之外的字符，再试试 emoji 😉
     // let your_character = '';
 
     if your_character.is_alphabetic() {

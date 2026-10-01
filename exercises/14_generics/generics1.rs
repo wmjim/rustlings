@@ -1,14 +1,13 @@
-// `Vec<T>` is generic over the type `T`. In most cases, the compiler is able to
-// infer `T`, for example after pushing a value with a concrete type to the vector.
-// But in this exercise, the compiler needs some help through a type annotation.
+// `Vec<T>` 在类型 `T` 上是泛型的。大多数情况下，编译器都能推断出 `T`，
+// 比如在向向量中 push 了一个具体类型的值之后。
+// 但在这个练习里，编译器需要通过类型标注来获得一点帮助。
 
 fn main() {
-    // TODO: Fix the compiler error by annotating the type of the vector
-    // `Vec<T>`. Choose `T` as some integer type that can be created from
-    // `u8` and `i8`.
+    // TODO: 通过给向量 `Vec<T>` 标注类型来修复编译错误。
+    // 请选择一个既能从 `u8`、也能从 `i8` 创建出来的整数类型作为 `T`。
     let mut numbers = Vec::new();
 
-    // Don't change the lines below.
+    // 不要修改下面的代码。
     let n1: u8 = 42;
     numbers.push(n1.into());
     let n2: i8 = -1;

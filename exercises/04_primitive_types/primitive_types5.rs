@@ -1,8 +1,8 @@
 fn main() {
     let cat = ("Furry McFurson", 3.5);
 
-    // TODO: Destructure the `cat` tuple in one statement so that the println works.
-    // let /* your pattern here */ = cat;
+    // TODO: 用一条语句解构 `cat` 元组，让下面的 println 能正常工作。
+    // let /* 在这里写你的模式 */ = cat;
 
     println!("{name} is {age} years old");
 }

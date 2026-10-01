@@ -1,12 +1,12 @@
-// Here are some more easy Clippy fixes so you can see its utility 📎
-// TODO: Fix all the Clippy lints.
+// 这里还有几个简单的 Clippy 修复，让你看看它的用处 📎
+// TODO: 修复所有的 Clippy lint。
 
 #[rustfmt::skip]
 #[allow(unused_variables, unused_assignments)]
 fn main() {
     let my_option: Option<&str> = None;
-    // Assume that you don't know the value of `my_option`.
-    // In the case of `Some`, we want to print its value.
+    // 假设你不知道 `my_option` 的值。
+    // 如果它是 `Some`，我们希望打印出它的值。
     if my_option.is_none() {
         println!("{}", my_option.unwrap());
     }
@@ -22,7 +22,7 @@ fn main() {
 
     let mut value_a = 45;
     let mut value_b = 66;
-    // Let's swap these two!
+    // 来交换这两个值！
     value_a = value_b;
     value_b = value_a;
     println!("value a: {value_a}; value b: {value_b}");

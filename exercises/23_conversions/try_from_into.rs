@@ -1,7 +1,6 @@
-// `TryFrom` is a simple and safe type conversion that may fail in a controlled
-// way under some circumstances. Basically, this is the same as `From`. The main
-// difference is that this should return a `Result` type instead of the target
-// type itself. You can read more about it in the documentation:
+// `TryFrom` 是一种简单且安全的类型转换，在某些情况下它可能以可控的方式失败。
+// 基本上它和 `From` 一样，主要区别是它应该返回 `Result` 类型，
+// 而不是目标类型本身。你可以在文档中读到更多内容：
 // https://doc.rust-lang.org/std/convert/trait.TryFrom.html
 
 #![allow(clippy::useless_vec)]
@@ -14,32 +13,32 @@ struct Color {
     blue: u8,
 }
 
-// We will use this error type for the `TryFrom` conversions.
+// 我们将在 `TryFrom` 转换中使用这个错误类型。
 #[derive(Debug, PartialEq)]
 enum IntoColorError {
-    // Incorrect length of slice
+    // 切片长度不正确
     BadLen,
-    // Integer conversion error
+    // 整数转换错误
     IntConversion,
 }
 
-// TODO: Tuple implementation.
-// Correct RGB color values must be integers in the 0..=255 range.
+// TODO: 元组（tuple）的实现。
+// 正确的 RGB 颜色值必须是 0..=255 范围内的整数。
 impl TryFrom<(i16, i16, i16)> for Color {
     type Error = IntoColorError;
 
     fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {}
 }
 
-// TODO: Array implementation.
+// TODO: 数组（array）的实现。
 impl TryFrom<[i16; 3]> for Color {
     type Error = IntoColorError;
 
     fn try_from(arr: [i16; 3]) -> Result<Self, Self::Error> {}
 }
 
-// TODO: Slice implementation.
-// This implementation needs to check the slice length.
+// TODO: 切片（slice）的实现。
+// 这个实现需要检查切片的长度。
 impl TryFrom<&[i16]> for Color {
     type Error = IntoColorError;
 
@@ -47,19 +46,19 @@ impl TryFrom<&[i16]> for Color {
 }
 
 fn main() {
-    // Using the `try_from` function.
+    // 使用 `try_from` 函数。
     let c1 = Color::try_from((183, 65, 14));
     println!("{c1:?}");
 
-    // Since `TryFrom` is implemented for `Color`, we can use `TryInto`.
+    // 由于为 `Color` 实现了 `TryFrom`，我们可以使用 `TryInto`。
     let c2: Result<Color, _> = [183, 65, 14].try_into();
     println!("{c2:?}");
 
     let v = vec![183, 65, 14];
-    // With slice we should use the `try_from` function
+    // 对于切片，我们应该使用 `try_from` 函数
     let c3 = Color::try_from(&v[..]);
     println!("{c3:?}");
-    // or put the slice within round brackets and use `try_into`.
+    // 或者把切片放进圆括号里，然后使用 `try_into`。
     let c4: Result<Color, _> = (&v[..]).try_into();
     println!("{c4:?}");
 }

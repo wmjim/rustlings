@@ -1,4 +1,4 @@
-// TODO: Fix the compiler error on this function.
+// TODO: 修复这个函数中的编译错误。
 fn picky_eater(food: &str) -> &str {
     if food == "strawberry" {
         "Yummy!"
@@ -8,18 +8,18 @@ fn picky_eater(food: &str) -> &str {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // 你可以在这里随意试验。
 }
 
-// TODO: Read the tests to understand the desired behavior.
-// Make all tests pass without changing them.
+// TODO: 阅读测试，理解期望的行为。
+// 在不修改测试的前提下让所有测试通过。
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
     fn yummy_food() {
-        // This means that calling `picky_eater` with the argument "strawberry" should return "Yummy!".
+        // 意思是：用参数 "strawberry" 调用 `picky_eater` 时，应该返回 "Yummy!"。
         assert_eq!(picky_eater("strawberry"), "Yummy!");
     }
 

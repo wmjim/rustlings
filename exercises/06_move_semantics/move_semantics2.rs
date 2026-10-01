@@ -7,15 +7,15 @@ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // 你可以在这里随意试验。
 }
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
-    // TODO: Make both vectors `vec0` and `vec1` accessible at the same time to
-    // fix the compiler error in the test.
+    // TODO: 让 `vec0` 和 `vec1` 两个向量能够被同时访问，
+    // 从而修复测试中的编译错误。
     #[test]
     fn move_semantics2() {
         let vec0 = vec![22, 44, 66];

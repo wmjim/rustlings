@@ -1,8 +1,7 @@
-// Let's define a simple model to track Rustlings' exercise progress. Progress
-// will be modelled using a hash map. The name of the exercise is the key and
-// the progress is the value. Two counting functions were created to count the
-// number of exercises with a given progress. Recreate this counting
-// functionality using iterators. Try to not use imperative loops (for/while).
+// 我们来定义一个简单的模型，用来跟踪 Rustlings 的练习进度。
+// 进度会用哈希表来表示：练习的名字是键，进度是值。
+// 我们已经写了两个计数函数，用来统计处于某种进度的练习有多少个。
+// 请用迭代器重新实现这两个计数功能。尽量不要使用命令式循环（for/while）。
 
 use std::collections::HashMap;
 
@@ -23,10 +22,9 @@ fn count_for(map: &HashMap<String, Progress>, value: Progress) -> usize {
     count
 }
 
-// TODO: Implement the functionality of `count_for` but with an iterator instead
-// of a `for` loop.
+// TODO: 实现与 `count_for` 相同的功能，但要用迭代器代替 `for` 循环。
 fn count_iterator(map: &HashMap<String, Progress>, value: Progress) -> usize {
-    // `map` is a hash map with `String` keys and `Progress` values.
+    // `map` 是一个以 `String` 为键、以 `Progress` 为值的哈希表。
     // map = { "variables1": Complete, "from_str": None, … }
 }
 
@@ -42,16 +40,15 @@ fn count_collection_for(collection: &[HashMap<String, Progress>], value: Progres
     count
 }
 
-// TODO: Implement the functionality of `count_collection_for` but with an
-// iterator instead of a `for` loop.
+// TODO: 实现与 `count_collection_for` 相同的功能，但要用迭代器代替 `for` 循环。
 fn count_collection_iterator(collection: &[HashMap<String, Progress>], value: Progress) -> usize {
-    // `collection` is a slice of hash maps.
+    // `collection` 是一个由哈希表组成的切片。
     // collection = [{ "variables1": Complete, "from_str": None, … },
     //               { "variables2": Complete, … }, … ]
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // 你可以在这里随意试验。
 }
 
 #[cfg(test)]

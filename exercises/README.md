@@ -1,6 +1,6 @@
-# Exercise to Book Chapter mapping
+# 练习与书中章节的对应关系
 
-| Exercise               | Book Chapter        |
+| 练习                   | 书中章节            |
 | ---------------------- | ------------------- |
 | variables              | §3.1                |
 | functions              | §3.3                |
@@ -23,5 +23,10 @@
 | smart_pointers         | §15, §16.3          |
 | threads                | §16.1-3             |
 | macros                 | §20.5               |
-| clippy                 | Appendix D          |
-| conversions            | n/a                 |
+| clippy                 | 附录 D              |
+| conversions            | 无                  |
+
+做完练习前可以读一读 `../HINTS.zh-CN.md`：里面是 rustlings `hint` 命令内置提示的中文翻译。
+
+在终端里输入 `h` 查看提示（`rustlings hint <练习名>` 效果相同）。
+内置提示的文字编译在 rustlings 程序内部，因此这里显示的仍是英文。

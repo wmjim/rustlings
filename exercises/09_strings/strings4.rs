@@ -1,4 +1,4 @@
-// Calls of this function should be replaced with calls of `string_slice` or `string`.
+// 对这个函数的调用应该被替换成对 `string_slice` 或 `string` 的调用。
 fn placeholder() {}
 
 fn string_slice(arg: &str) {
@@ -9,9 +9,9 @@ fn string(arg: String) {
     println!("{arg}");
 }
 
-// TODO: Here are a bunch of values - some are `String`, some are `&str`.
-// Your task is to replace `placeholder(…)` with either `string_slice(…)`
-// or `string(…)` depending on what you think each value is.
+// TODO: 这里有一堆值，其中有些是 `String`，有些是 `&str`。
+// 你的任务是：根据你对每个值类型的判断，把 `placeholder(…)` 替换成
+// `string_slice(…)` 或 `string(…)`。
 fn main() {
     placeholder("blue");
 
@@ -25,8 +25,8 @@ fn main() {
 
     placeholder(format!("Interpolation {}", "Station"));
 
-    // WARNING: This is byte indexing, not character indexing.
-    // Character indexing can be done using `s.chars().nth(INDEX)`.
+    // 警告：这里是按字节索引，而不是按字符索引。
+    // 按字符索引可以用 `s.chars().nth(INDEX)` 实现。
     placeholder(&String::from("abc")[0..1]);
 
     placeholder("  hello there ".trim());

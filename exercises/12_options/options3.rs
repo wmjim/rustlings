@@ -7,11 +7,11 @@ struct Point {
 fn main() {
     let optional_point = Some(Point { x: 100, y: 200 });
 
-    // TODO: Fix the compiler error by adding something to this match statement.
+    // TODO: 给这个 match 语句加点东西，修复编译错误。
     match optional_point {
         Some(p) => println!("Coordinates are {},{}", p.x, p.y),
         _ => panic!("No match!"),
     }
 
-    println!("{optional_point:?}"); // Don't change this line.
+    println!("{optional_point:?}"); // 不要修改这一行。
 }

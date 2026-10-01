@@ -1,8 +1,8 @@
-// You can use the `use` keyword to bring module paths from modules from
-// anywhere and especially from the standard library into your scope.
+// 你可以用 `use` 关键字把任意位置的模块路径引入作用域，
+// 尤其是标准库中的路径。
 
-// TODO: Bring `SystemTime` and `UNIX_EPOCH` from the `std::time` module into
-// your scope. Bonus style points if you can do it with one line!
+// TODO: 把 `std::time` 模块中的 `SystemTime` 和 `UNIX_EPOCH` 引入你的作用域。
+// 如果能只用一行就做到，会额外加分！
 // use ???;
 
 fn main() {

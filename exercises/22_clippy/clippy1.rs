@@ -1,11 +1,11 @@
-// The Clippy tool is a collection of lints to analyze your code so you can
-// catch common mistakes and improve your Rust code.
+// Clippy 是一个 lint 工具集，它负责分析你的代码，
+// 帮你发现常见错误并改进 Rust 代码。
 //
-// For these exercises, the code will fail to compile when there are Clippy
-// warnings. Check Clippy's suggestions from the output to solve the exercise.
+// 在这些练习中，只要存在 Clippy 警告，代码就无法通过编译。
+// 请查看输出中 Clippy 给出的建议来解决练习。
 
 fn main() {
-    // TODO: Fix the Clippy lint in this line.
+    // TODO: 修复这一行上的 Clippy lint。
     let pi = 3.14;
     let radius: f32 = 5.0;
 

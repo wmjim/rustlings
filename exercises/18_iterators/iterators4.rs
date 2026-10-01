@@ -1,19 +1,19 @@
 fn factorial(num: u64) -> u64 {
-    // TODO: Complete this function to return the factorial of `num` which is
-    // defined as `1 * 2 * 3 * … * num`.
+    // TODO: 补全这个函数，让它返回 `num` 的阶乘，
+    // 阶乘的定义是 `1 * 2 * 3 * … * num`。
     // https://en.wikipedia.org/wiki/Factorial
     //
-    // Do not use:
-    // - early returns (using the `return` keyword explicitly)
-    // Try not to use:
-    // - imperative style loops (for/while)
-    // - additional variables
-    // For an extra challenge, don't use:
-    // - recursion
+    // 不要使用：
+    // - 提前返回（显式使用 `return` 关键字）
+    // 尽量不要使用：
+    // - 命令式风格的循环（for/while）
+    // - 额外的变量
+    // 想向更高难度挑战的话，不要使用：
+    // - 递归
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // 你可以在这里随意试验。
 }
 
 #[cfg(test)]
