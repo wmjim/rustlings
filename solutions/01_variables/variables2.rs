@@ -1,11 +1,10 @@
 fn main() {
-    // The easiest way to fix the compiler error is to initialize the
-    // variable `x`. By setting its value to an integer, Rust infers its type
-    // as `i32` which is the default type for integers.
+    // 修复这个编译错误最简单的办法，是初始化变量 `x`。
+    // 把它的值设为一个整数后，Rust 会把它的类型推断为 `i32`，
+    // 也就是整数的默认类型。
     let x = 42;
 
-    // But we can enforce a type different from the default `i32` by adding
-    // a type annotation:
+    // 但我们也可以通过加上类型标注，强制使用与默认 `i32` 不同的类型：
     // let x: u8 = 42;
 
     if x == 10 {
